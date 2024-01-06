@@ -1,0 +1,75 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+
+#define Napis 100//maksymalny rozmiar ciagu znakow
+
+int main() {
+
+    int fd[2];//rura 0-czytanie 1-pisanie
+
+    if (pipe(fd) == -1) {
+        printf("error");
+        exit(0);
+    }
+
+    pid_t pp1_pid, pp2_pid;
+		
+    //blad przy towrzeniu PP1
+    if ((pp1_pid = fork()) == -1) {
+        printf("error");
+        exit(0);
+    }
+	
+    if (pp1_pid == 0) {//cialo procesu PP1
+        close(fd[0]);//PP1 nie czyta
+
+        char buffer[Napis];
+        printf("PP1(%d): Podaj tekst: ",getpid());
+        fgets(buffer, Napis, stdin);
+
+        write(fd[1], buffer, sizeof(buffer));//przesyl ciagu znakow do PM
+		printf("PP1(%d): Wyslano do PM: %s",getpid(),buffer);
+		
+        close(fd[1]);//zamykanie zapisu rury
+        exit(0);
+    }
+
+    //kod dla PM
+    close(fd[1]);//PM nie zapisuje
+
+    //blad przy towrzeniu PP2
+    if ((pp2_pid = fork()) == -1) {
+        printf("error");
+        exit(0);
+    }
+
+    if (pp2_pid == 0) {//cialo procesu PP2
+        char buffer[Napis];
+
+        read(fd[0], buffer, sizeof(buffer));  // Odbieranie danych od PM
+        printf("PP2(%d): Odczytano od PM: %s",getpid(), buffer);
+
+        //zamiana malych liter na duze i odwrotnie
+        for (int i = 0; buffer[i] != '\0'; i++) {
+            if (buffer[i] >= 'a' && buffer[i] <= 'z') {
+                buffer[i] = buffer[i] - 'a' + 'A';
+            } else if (buffer[i] >= 'A' && buffer[i] <= 'Z') {
+                buffer[i] = buffer[i] - 'A' + 'a';
+            }
+        }
+
+        printf("PP2(%d): Wyslano do PM: %s",getpid(), buffer);
+
+        close(fd[0]);  // Zamykanie odczytu z potoku
+        exit(0);
+    }
+
+    //kod dla PM
+    close(fd[0]);//PM nie czyta
+	printf("PM(%d) PP1(%d) PP2(%d) \n", getpid(),pp1_pid,pp2_pid);
+    wait(NULL);//czekanie na zakończenie obu procesow potomnych
+    wait(NULL);
+
+    return 0;
+}
