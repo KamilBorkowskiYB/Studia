@@ -58,7 +58,6 @@ public:
     int getLiczbaCylindrow(){return this->liczbaCylindrow;}
     int getMoc(){return this->moc;}
     int getMaxMomentObrotowy(){return this->maxMomentObrotowy;}
-    //~Silnik(){}//brak na schemacie
 };
 
 class DodatkoweWyposazenie{
