@@ -1,13 +1,8 @@
 #include <iostream>
-
 using namespace std;
 
-template<typename T, typename Sort> class LIFO;
-template<typename T, typename Sort> class FIFO;
-
 template<typename T, typename Sort> class Kolekcja{
-    friend class FIFO<T, Sort>;
-    friend class LIFO<T, Sort>;
+    protected:
     T tablicaDanych[100];
     Sort rodzajSortowania;
     int rozmiar = 0;//zmienna do sledzenia pozycji najldalszego elementu tablicy
@@ -69,7 +64,6 @@ template<typename T, typename Sort> class LIFO : public Kolekcja<T, Sort>{
         {
             cout<<"Tablica jest pusta"<<endl;
         }
-        //return -1;
     }
     void oproznij()
     {
