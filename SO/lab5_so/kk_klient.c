@@ -1,44 +1,44 @@
-#include <sys/msg.h>
 #include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
 #include <sys/ipc.h>
-#include <sys/shm.h>
+#include <sys/msg.h>
 
-struct message//struktura wiadomosci
-{
-    long rodzaj;
-    int m;
-}; 
+struct buffer {
+	long typW;
+	int mesg;
+} message;
 
 int main(int argc, char *argv[])
 {
-	key_t key = 2222;
-    int msqid = msgget(key, IPC_CREAT); //tworzenie kolejki z kluczem
-	
-	
-    int n = atoi(argv[1]);//int n jest wprowadzane przy wywolaniu programu
+	key_t key;
+	int msgid;
+	int n = atoi(argv[1]);//int n jest wprowadzane przy wywolaniu programu, ilosc liczb
 	int i;
+
+	key = ftok("progfile", 65); //generacja klucza
+
+	msgid = msgget(key, 0666 | IPC_CREAT); //podpiecie sie pod kk
+	message.typW = 1; //1 = M_DANE,2 = M_KONIEC, 3 = M_WYNIK
+
 	for(i=1;i<=n;i++)
 	{
 		if(i!=n)
 		{
-			struct message M_DANA;
-			printf("Podaj %d. liczbe: ",i);
-			scanf("%d", &M_DANA.m); 
-			msgsnd(msqid,&M_DANA,sizeof(M_DANA),0);
-			printf("Wyslano: %d\n", M_DANA.m); 
-			M_DANA.rodzaj = 1; 
+			printf("Podaj %d liczbe: ",i);
+			scanf("%d", &message.mesg);
+			msgsnd(msgid, &message, sizeof(message), 0); //wysylanie wiadomosci
 		}
 		else
 		{
-			struct message M_KONIEC;
-			printf("Podaj %d. liczbe: ",i);
-			scanf("%d", &M_KONIEC.m); 
-			msgsnd(msqid,&M_KONIEC,sizeof(M_KONIEC),0);
-			printf("Wyslano: %d\n", M_KONIEC.m); 
-			M_KONIEC.rodzaj = 2; 
+			message.typW = 2;
+			printf("Podaj %d liczbe: ",i);
+			scanf("%d", &message.mesg);
+			msgsnd(msgid, &message, sizeof(message), 0); //wysylanie wiadomosci
 		}
 	}
-    return 0;
+
+	msgrcv(msgid, &message, sizeof(message), 0, 0);
+	printf("Odczytano komunikat M_WYNIK o wartosci: %d \n", message.mesg);
+
+	msgctl(msgid, IPC_RMID, NULL); //niszczenie kk na koniec programu
+	return 0;
 }
