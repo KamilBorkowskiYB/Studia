@@ -1,2 +1,2 @@
-*.PLSQL linguist-detectable=false
-*.Assembly linguist-detectable=false
+*.sql linguist-detectable=false
+*.ddl linguist-detectable=false
