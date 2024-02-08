@@ -5,7 +5,7 @@ template<typename T, typename Sort> class Kolekcja{
     protected:
     T tablicaDanych[100];
     Sort rodzajSortowania;
-    int rozmiar = 0;//zmienna do sledzenia pozycji najldalszego elementu tablicy
+    int rozmiar = 0;
 
     public:
     virtual void dodaj(T wartosc)=0;
@@ -21,6 +21,10 @@ template<typename T, typename Sort> class LIFO : public Kolekcja<T, Sort>{
     LIFO(Sort rdzSort)
     {
         this->rodzajSortowania=rdzSort;
+        for(int i=0;i<99;i++)
+        {
+            this->tablicaDanych[i]=NULL;
+        }
     }
     void dodaj(T wartosc)
     {
@@ -30,6 +34,18 @@ template<typename T, typename Sort> class LIFO : public Kolekcja<T, Sort>{
             this->tablicaDanych[this->rozmiar] = wartosc;
             this->rozmiar++;
         }
+        /*
+        for(int i=0;i<99;i++)
+        {
+            if(this->tablicaDanych[i]==NULL)
+            {
+                cout<<"Dodano "<<wartosc<<" do kolejki LIFO"<<endl;
+                this->tablicaDanych[i] = wartosc;
+                break;
+            }
+            cout<<"Osiagnieto maksymalna ilosc elementow tablicy"<<endl;
+        }*/
+
         else
         {
           cout<<"Osiagnieto maksymalna ilosc elementow tablicy"<<endl;
@@ -37,6 +53,16 @@ template<typename T, typename Sort> class LIFO : public Kolekcja<T, Sort>{
     }
     void wydrukuj()
     {
+        /*cout<<"Elementy tablicy LIFO:"<<endl;
+        for(int i=0;i<99;i++)
+        {
+            if(this->tablicaDanych[i]!=NULL)
+            {
+                cout<<this->tablicaDanych[i]<<'\t';
+            }
+            //cout<<"Tablica jest pusta";
+        }*/
+
         cout<<"Elementy tablicy LIFO:"<<endl;
         if(this->rozmiar==0)
         {
@@ -67,6 +93,11 @@ template<typename T, typename Sort> class LIFO : public Kolekcja<T, Sort>{
     }
     void oproznij()
     {
+        cout<<"Wyczyszczono tablice!"<<endl;
+        for(int i=0;i<this->rozmiar;i++)
+        {
+            this->tablicaDanych[i]=NULL;
+        }
         this->rozmiar = 0;
     }
 };
@@ -128,7 +159,7 @@ template<typename T, typename Sort> class FIFO : public Kolekcja<T, Sort>{
         cout<<"Wyczyszczono tablice!"<<endl;
         for(int i=0;i<this->rozmiar;i++)
         {
-            this->tablicaDanych[i]=0;
+            this->tablicaDanych[i]=NULL;
         }
         this->rozmiar = 0;
     }
@@ -171,10 +202,7 @@ template<typename T> class SortowanieRosnace : public Sortowanie<T>{
 
 int main(){
     SortowanieMalejace<double> sDesc;
-    SortowanieRosnace<double> sAsc;
-
     FIFO<double, SortowanieMalejace <double>> fifo(sDesc);
-    LIFO<double, SortowanieRosnace <double>> lifo(sAsc);
 
     fifo.dodaj(7);
     fifo.dodaj(3.5);
@@ -193,6 +221,8 @@ int main(){
     fifo.wydrukuj();
 
     cout<<"-----------------------------------------------"<<endl;
+    SortowanieRosnace<double> sAsc;
+    LIFO<double, SortowanieRosnace <double>> lifo(sAsc);
     lifo.dodaj(89);
     lifo.dodaj(28.01);
     lifo.dodaj(10.06);
@@ -234,6 +264,14 @@ int main(){
 	fifo2.wydrukuj();
 	fifo2.oproznij();
 	fifo2.wydrukuj();
+
+	SortowanieRosnace<char> charros;
+	LIFO<char, SortowanieRosnace <char>> lifo3(charros);
+	lifo3.dodaj('a');
+	lifo3.dodaj('z');
+	lifo3.dodaj('c');
+	lifo3.posortuj();
+	lifo3.wydrukuj();
 
     return 0;
 }
