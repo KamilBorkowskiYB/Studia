@@ -41,14 +41,41 @@
 <dataTypePrecision>2</dataTypePrecision>
 <ownDataTypeParameters>,2,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="producent" id="4F1615D5-731A-7261-CA68-30079E502C07">
+<createdBy>Kamil</createdBy>
+<createdTime>2024-01-24 11:19:58 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<engineerTo>
+<item key="2B1B8A60-70C8-EDB8-DD1D-F65373020F3F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="liczba_rdzeni" id="E620A824-FC46-F53A-5B70-9A7129CB0106">
+<createdBy>Kamil</createdBy>
+<createdTime>2024-01-24 11:20:11 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<engineerTo>
+<item key="2B1B8A60-70C8-EDB8-DD1D-F65373020F3F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="3F1A5304-C26A-22EE-7187-4902DC939B48" name="PROCESOR PK">
 <createdBy>Kamil</createdBy>
 <createdTime>2024-01-23 19:25:09 UTC</createdTime>
 <ownerDesignName>schemat</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="2B1B8A60-70C8-EDB8-DD1D-F65373020F3F" value="true"/>
+<item key="2B1B8A60-70C8-EDB8-DD1D-F65373020F3F" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

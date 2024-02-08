@@ -28,9 +28,22 @@
 <dataTypePrecision>2</dataTypePrecision>
 <ownDataTypeParameters>,2,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="model" id="357E3836-EA6B-BE6C-E73B-B143082D1CED">
+<Attribute name="rtx" id="357E3836-EA6B-BE6C-E73B-B143082D1CED">
 <createdBy>Kamil</createdBy>
 <createdTime>2024-01-23 19:26:09 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<engineerTo>
+<item key="2B1B8A60-70C8-EDB8-DD1D-F65373020F3F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="producent" id="EB653433-51AD-7403-BFB8-3D66211F662B">
+<createdBy>Kamil</createdBy>
+<createdTime>2024-01-24 11:22:00 UTC</createdTime>
 <ownerDesignName>schemat</ownerDesignName>
 <engineerTo>
 <item key="2B1B8A60-70C8-EDB8-DD1D-F65373020F3F" value="true"/>
@@ -47,8 +60,9 @@
 <createdBy>Kamil</createdBy>
 <createdTime>2024-01-23 19:26:08 UTC</createdTime>
 <ownerDesignName>schemat</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="2B1B8A60-70C8-EDB8-DD1D-F65373020F3F" value="true"/>
+<item key="2B1B8A60-70C8-EDB8-DD1D-F65373020F3F" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

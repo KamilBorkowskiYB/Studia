@@ -41,14 +41,41 @@
 <dataTypeSize>4</dataTypeSize>
 <ownDataTypeParameters>4,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="rodzaj" id="5FDD3B73-1490-B4EA-A73E-639D41218F27">
+<createdBy>Kamil</createdBy>
+<createdTime>2024-01-24 11:18:43 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<engineerTo>
+<item key="2B1B8A60-70C8-EDB8-DD1D-F65373020F3F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="taktowanie_Mhz" id="97BC65EE-524A-8368-87F4-8FC441635905">
+<createdBy>Kamil</createdBy>
+<createdTime>2024-01-24 11:18:53 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<engineerTo>
+<item key="2B1B8A60-70C8-EDB8-DD1D-F65373020F3F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="132F9C48-84C4-B821-B796-C1F4C226A019" name="RAM PK">
 <createdBy>Kamil</createdBy>
 <createdTime>2024-01-23 19:23:42 UTC</createdTime>
 <ownerDesignName>schemat</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="2B1B8A60-70C8-EDB8-DD1D-F65373020F3F" value="true"/>
+<item key="2B1B8A60-70C8-EDB8-DD1D-F65373020F3F" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

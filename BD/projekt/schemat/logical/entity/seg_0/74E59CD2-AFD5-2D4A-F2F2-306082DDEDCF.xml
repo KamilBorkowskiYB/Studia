@@ -41,29 +41,15 @@
 <dataTypeSize>20</dataTypeSize>
 <ownDataTypeParameters>20,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_laptopa" id="30EDFEB3-C9EF-CD16-9F1B-ED906065BC3D">
-<createdBy>Kamil</createdBy>
-<createdTime>2024-01-23 19:29:03 UTC</createdTime>
-<generatorID>5D524960-1E2C-E5AB-B44D-FAEE959B0896</generatorID>
-<ownerDesignName>schemat</ownerDesignName>
-<engineerTo>
-<item key="2B1B8A60-70C8-EDB8-DD1D-F65373020F3F" value="true"/>
-</engineerTo>
-<referedAttribute>1A13D151-E8D2-210D-942C-6ECD90148FB9</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>3</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="3E2FAC06-9BE9-2280-3A76-1D233C306481" name="Nazwy PK">
 <createdBy>Kamil</createdBy>
 <createdTime>2024-01-23 19:10:44 UTC</createdTime>
 <ownerDesignName>schemat</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="2B1B8A60-70C8-EDB8-DD1D-F65373020F3F" value="true"/>
+<item key="2B1B8A60-70C8-EDB8-DD1D-F65373020F3F" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
