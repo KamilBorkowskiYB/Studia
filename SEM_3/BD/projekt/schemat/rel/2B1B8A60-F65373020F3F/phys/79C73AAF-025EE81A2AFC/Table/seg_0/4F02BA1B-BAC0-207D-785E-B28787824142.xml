@@ -1,0 +1,31 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="RAM" directorySegmentName="seg_0" id="4F02BA1B-BAC0-207D-785E-B28787824142">
+<createdBy>Kamil</createdBy>
+<createdTime>2024-01-24 10:33:15 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="pamiec" id="0710F40C-FD4C-4B69-952F-7F609E11D3D8">
+<createdBy>Kamil</createdBy>
+<createdTime>2024-01-24 10:33:15 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_ram" id="C8B5B96E-1836-B7DC-2647-789A85534D10">
+<createdBy>Kamil</createdBy>
+<createdTime>2024-01-24 10:33:15 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="RAM_PK" id="250821FC-607B-B2A7-F9E3-F4C2AA426E94">
+<createdBy>Kamil</createdBy>
+<createdTime>2024-01-24 10:33:15 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

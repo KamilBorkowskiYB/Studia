@@ -1,0 +1,31 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="PROCESOR" directorySegmentName="seg_0" id="89629E55-AB00-2420-555D-433C469E62F5">
+<createdBy>Kamil</createdBy>
+<createdTime>2024-01-24 10:33:15 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="generacja" id="0112747D-1F68-64BE-E419-05084912E78E">
+<createdBy>Kamil</createdBy>
+<createdTime>2024-01-24 10:33:15 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_procesor" id="AE36C0F8-9D82-BD09-3608-AB30F2112CAA">
+<createdBy>Kamil</createdBy>
+<createdTime>2024-01-24 10:33:15 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PROCESOR_PK" id="39E9EA19-3BE7-0180-80B1-A5E26F8AB3AC">
+<createdBy>Kamil</createdBy>
+<createdTime>2024-01-24 10:33:15 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

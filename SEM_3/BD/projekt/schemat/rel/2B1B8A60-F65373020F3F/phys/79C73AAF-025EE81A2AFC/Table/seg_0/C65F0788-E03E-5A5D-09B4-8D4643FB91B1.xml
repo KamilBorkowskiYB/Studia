@@ -1,0 +1,55 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="FIRMA_KLIENT" directorySegmentName="seg_0" id="C65F0788-E03E-5A5D-09B4-8D4643FB91B1">
+<createdBy>Kamil</createdBy>
+<createdTime>2024-01-24 10:33:15 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="telefon" id="22E8307B-869D-2D3D-41EB-0D68BCDF882A">
+<createdBy>Kamil</createdBy>
+<createdTime>2024-01-24 10:33:15 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_nazwa_firmy" id="325A6565-768C-3E70-713C-7E48F0F18AC2">
+<createdBy>Kamil</createdBy>
+<createdTime>2024-01-24 10:33:15 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="e-mail" id="716023E2-E5A5-1029-DC14-B71B5DD92CE6">
+<createdBy>Kamil</createdBy>
+<createdTime>2024-01-24 10:33:15 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_firmy" id="D43685C8-2219-37B9-80E5-D3917B30EEC8">
+<createdBy>Kamil</createdBy>
+<createdTime>2024-01-24 10:33:15 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="FIRMA_KLIENT__IDX" id="BB42D230-32FA-9C5F-525F-1BAB3338EEB3">
+<createdBy>Kamil</createdBy>
+<createdTime>2024-01-24 10:33:15 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="NAZWY_FIRM_FK" id="5377402A-7945-EF47-5CDA-C4F4455041D0">
+<createdBy>Kamil</createdBy>
+<createdTime>2024-01-24 10:33:15 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="FIRMA_KLIENT_PK" id="0DB6C74B-E3E8-FC78-385F-C04D1ED62AC7">
+<createdBy>Kamil</createdBy>
+<createdTime>2024-01-24 10:33:15 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

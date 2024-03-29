@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C65F0788-E03E-5A5D-09B4-8D4643FB91B1" name="FIRMA_KLIENT">
+<createdBy>Kamil</createdBy>
+<createdTime>2024-01-23 20:26:16 UTC</createdTime>
+<generatorID>7F822A30-CE02-DD64-0C50-71561ACAB7DF</generatorID>
+<ownerDesignName>schemat</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_firmy" id="D43685C8-2219-37B9-80E5-D3917B30EEC8">
+<createdBy>Kamil</createdBy>
+<createdTime>2024-01-23 20:26:16 UTC</createdTime>
+<generatorID>CAAA939B-B3B9-71B5-E55B-63929195D04F</generatorID>
+<ownerDesignName>schemat</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="e-mail" id="716023E2-E5A5-1029-DC14-B71B5DD92CE6">
+<createdBy>Kamil</createdBy>
+<createdTime>2024-01-23 20:26:16 UTC</createdTime>
+<generatorID>88E4AB7E-32CD-FF21-11E1-19D6E8185E7B</generatorID>
+<ownerDesignName>schemat</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefon" id="22E8307B-869D-2D3D-41EB-0D68BCDF882A">
+<createdBy>Kamil</createdBy>
+<createdTime>2024-01-23 20:26:16 UTC</createdTime>
+<generatorID>2180C7CA-9AD3-1FEF-C5A6-AA6A9E005595</generatorID>
+<ownerDesignName>schemat</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,11,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_nazwa_firmy" id="325A6565-768C-3E70-713C-7E48F0F18AC2">
+<createdBy>Kamil</createdBy>
+<createdTime>2024-01-23 20:26:16 UTC</createdTime>
+<generatorID>CD59DBCE-319A-7A52-6730-D6D918E4A7B6</generatorID>
+<ownerDesignName>schemat</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DAEF5E1B-CB9F-0208-C73C-A6B873205B27" referredColumn="164C8B0E-7704-C03E-7449-FA6DE8CF0A9D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0DB6C74B-E3E8-FC78-385F-C04D1ED62AC7" name="FIRMA_KLIENT_PK">
+<createdBy>Kamil</createdBy>
+<createdTime>2024-01-23 20:26:16 UTC</createdTime>
+<generatorID>7E6DB63F-76DB-F539-A94D-F06AAAB0C6B6</generatorID>
+<ownerDesignName>schemat</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D43685C8-2219-37B9-80E5-D3917B30EEC8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BB42D230-32FA-9C5F-525F-1BAB3338EEB3" name="FIRMA_KLIENT__IDX">
+<createdBy>Kamil</createdBy>
+<createdTime>2024-01-23 20:26:16 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>5851A6A1-8DAE-8FF9-C7F9-48DEE997DC2A</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="325A6565-768C-3E70-713C-7E48F0F18AC2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5377402A-7945-EF47-5CDA-C4F4455041D0" name="NAZWY_FIRM_FK">
+<createdBy>Kamil</createdBy>
+<createdTime>2024-01-23 20:26:16 UTC</createdTime>
+<generatorID>5851A6A1-8DAE-8FF9-C7F9-48DEE997DC2A</generatorID>
+<ownerDesignName>schemat</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="325A6565-768C-3E70-713C-7E48F0F18AC2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

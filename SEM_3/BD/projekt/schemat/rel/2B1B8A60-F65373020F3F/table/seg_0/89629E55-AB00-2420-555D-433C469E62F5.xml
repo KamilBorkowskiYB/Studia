@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="89629E55-AB00-2420-555D-433C469E62F5" name="PROCESOR">
+<createdBy>Kamil</createdBy>
+<createdTime>2024-01-23 20:26:16 UTC</createdTime>
+<generatorID>25F68AE1-2B94-A635-4A11-AC5E82E66FC1</generatorID>
+<ownerDesignName>schemat</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_procesor" id="AE36C0F8-9D82-BD09-3608-AB30F2112CAA">
+<createdBy>Kamil</createdBy>
+<createdTime>2024-01-23 20:26:16 UTC</createdTime>
+<generatorID>EF564356-AF1F-20D2-FE82-7DA11B064673</generatorID>
+<ownerDesignName>schemat</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="generacja" id="0112747D-1F68-64BE-E419-05084912E78E">
+<createdBy>Kamil</createdBy>
+<createdTime>2024-01-23 20:26:16 UTC</createdTime>
+<generatorID>D0D2A58F-6654-4B3E-43A0-7D6029AB6163</generatorID>
+<ownerDesignName>schemat</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="producent" id="1EE71460-0EE2-18E9-5B16-AC2CA6107FC4">
+<createdBy>Kamil</createdBy>
+<createdTime>2024-01-24 11:23:44 UTC</createdTime>
+<generatorID>4F1615D5-731A-7261-CA68-30079E502C07</generatorID>
+<ownerDesignName>schemat</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="liczba_rdzeni" id="76422307-564D-133D-ABC6-129B3B4B5971">
+<createdBy>Kamil</createdBy>
+<createdTime>2024-01-24 11:23:44 UTC</createdTime>
+<generatorID>E620A824-FC46-F53A-5B70-9A7129CB0106</generatorID>
+<ownerDesignName>schemat</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="39E9EA19-3BE7-0180-80B1-A5E26F8AB3AC" name="PROCESOR_PK">
+<createdBy>Kamil</createdBy>
+<createdTime>2024-01-23 20:26:16 UTC</createdTime>
+<generatorID>3F1A5304-C26A-22EE-7187-4902DC939B48</generatorID>
+<ownerDesignName>schemat</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AE36C0F8-9D82-BD09-3608-AB30F2112CAA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

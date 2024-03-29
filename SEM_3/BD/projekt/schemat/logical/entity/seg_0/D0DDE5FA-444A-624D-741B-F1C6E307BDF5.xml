@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D0DDE5FA-444A-624D-741B-F1C6E307BDF5" name="KARTA_GRAFICZNA">
+<createdBy>Kamil</createdBy>
+<createdTime>2024-01-23 19:25:47 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<engineerTo>
+<item key="2B1B8A60-70C8-EDB8-DD1D-F65373020F3F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_kartagraficzna" id="0E576310-4A73-F2AF-D4CF-24B85018E041">
+<createdBy>Kamil</createdBy>
+<createdTime>2024-01-23 19:25:54 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<engineerTo>
+<item key="2B1B8A60-70C8-EDB8-DD1D-F65373020F3F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rtx" id="357E3836-EA6B-BE6C-E73B-B143082D1CED">
+<createdBy>Kamil</createdBy>
+<createdTime>2024-01-23 19:26:09 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<engineerTo>
+<item key="2B1B8A60-70C8-EDB8-DD1D-F65373020F3F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="producent" id="EB653433-51AD-7403-BFB8-3D66211F662B">
+<createdBy>Kamil</createdBy>
+<createdTime>2024-01-24 11:22:00 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<engineerTo>
+<item key="2B1B8A60-70C8-EDB8-DD1D-F65373020F3F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3074B379-3D51-6A24-C445-AFF6AEC7376A" name="KARTA_GRAFICZNA PK">
+<createdBy>Kamil</createdBy>
+<createdTime>2024-01-23 19:26:08 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="2B1B8A60-70C8-EDB8-DD1D-F65373020F3F" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0E576310-4A73-F2AF-D4CF-24B85018E041</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="LEASING" directorySegmentName="seg_0" id="A2D463E6-3935-DBA9-B6E4-F781DCAFC161">
+<createdBy>Kamil</createdBy>
+<createdTime>2024-01-23 20:25:23 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<engineerTo>
+<item key="2B1B8A60-70C8-EDB8-DD1D-F65373020F3F" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>2A1824A1-716C-AC4D-6009-B475DF58583C</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>7F822A30-CE02-DD64-0C50-71561ACAB7DF</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="naklad" id="A3B8FC03-33D9-0830-09FB-6D1288FFFF3F">
+<createdBy>Kamil</createdBy>
+<createdTime>2024-01-23 20:27:43 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<engineerTo>
+<item key="2B1B8A60-70C8-EDB8-DD1D-F65373020F3F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,5,0</ownDataTypeParameters>
+</attribute>
+<attribute name="pocz_leasingu" id="041FA2A8-D0AE-ACB7-263E-D55CE34B0A26">
+<createdBy>Kamil</createdBy>
+<createdTime>2024-01-23 20:27:57 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<engineerTo>
+<item key="2B1B8A60-70C8-EDB8-DD1D-F65373020F3F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+<attribute name="kon_leasingu" id="8237D4AD-0F64-1E31-700C-734A9D0B7DA3">
+<createdBy>Kamil</createdBy>
+<createdTime>2024-01-23 20:28:08 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<engineerTo>
+<item key="2B1B8A60-70C8-EDB8-DD1D-F65373020F3F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+</attributes>
+</Relation>

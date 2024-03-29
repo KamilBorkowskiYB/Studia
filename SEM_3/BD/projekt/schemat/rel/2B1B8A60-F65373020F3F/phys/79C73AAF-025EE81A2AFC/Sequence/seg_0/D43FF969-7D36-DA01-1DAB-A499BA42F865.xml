@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SequenceOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.SequenceOraclev10g" name="seq_laptop" directorySegmentName="seg_0" id="D43FF969-7D36-DA01-1DAB-A499BA42F865">
+<createdBy>Kamil</createdBy>
+<createdTime>2024-01-24 10:35:26 UTC</createdTime>
+<ownerDesignName>schemat</ownerDesignName>
+<incrementBy>1</incrementBy>
+<noCache>YES</noCache>
+<startWith>1</startWith>
+</SequenceOraclev10g>

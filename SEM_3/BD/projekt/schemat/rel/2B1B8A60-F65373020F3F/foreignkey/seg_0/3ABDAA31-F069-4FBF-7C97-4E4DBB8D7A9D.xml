@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="3ABDAA31-F069-4FBF-7C97-4E4DBB8D7A9D" containerWithKeyObject="A78DB06E-284C-02F6-3EE5-63083DC88F39" localFKIndex="9A42E30B-3B34-B54A-CB27-DDB2D00A0CB8" name="PROCESOR_FK">
+<createdBy>Kamil</createdBy>
+<createdTime>2024-01-23 20:26:16 UTC</createdTime>
+<generatorID>16FB3367-2723-C085-3589-477C4F31DADC</generatorID>
+<ownerDesignName>schemat</ownerDesignName>
+<referredTableLongName>PROCESOR</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>89629E55-AB00-2420-555D-433C469E62F5</referredTableID>
+<keyObject>39E9EA19-3BE7-0180-80B1-A5E26F8AB3AC</keyObject>
+<referredKeyID>39E9EA19-3BE7-0180-80B1-A5E26F8AB3AC</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_procesor</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
