@@ -1,18 +1,16 @@
 package zad1;
 
-public class Main {
+public class Test {
     public static void main(String[] args) {
-        Thread[] watki = new Thread[2];
-        //0 - niesynchronicznie ; 1 - synchronizacja
-        int synth = 1;
-        for(int i = 0; i < 2; i++)
+        Thread[] watki = new Thread[10];
+        for(int i = 0; i < watki.length; i++)
         {
-            watki[i] = new Dekker(""+i,i,201,synth);
+            watki[i] = new SpecjalizacjaThread(""+ i);
         }
-        for(int i =0; i<2; i++){
+        for(int i =0; i<10; i++){
             watki[i].start();
         }
-        for(int i=0;i<2;i++){
+        for(int i=0;i<10;i++){
             try{
                 watki[i].join();
             }
@@ -21,5 +19,6 @@ public class Main {
                 break;
             }
         }
+        System.out.println("KONIEC");
     }
 }

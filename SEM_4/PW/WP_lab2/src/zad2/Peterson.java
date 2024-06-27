@@ -1,6 +1,6 @@
-package zad1;
+package zad2;
 
-public class Dekker extends Thread {
+public class Peterson extends Thread{
     private int nr;
     private int p;
     private  int synth;
@@ -8,7 +8,7 @@ public class Dekker extends Thread {
     private static volatile int czyjaKolej = 0;
     private char[] znaki = {'+', '-'};
 
-    public Dekker(String num,int nr,int p,int synth){
+    public Peterson(String num,int nr,int p,int synth){
         super(num);
         this.nr = nr;
         this.p = p;
@@ -37,16 +37,11 @@ public class Dekker extends Thread {
                 int czasCzekania = (int) (Math.random() * 10) + 1;
                 Thread.sleep(czasCzekania);
                 //
-
+    ////chce 0 = true 1 = false
                 chce[nr] = true;
-                while (chce[1 - nr]) {
-                    if (czyjaKolej != nr) {
-                        chce[nr] = false;
-                        while (czyjaKolej != nr) {
-                        }
-                        chce[nr] = true;
-                    }
-                }
+                czyjaKolej = 1 - nr;
+                while (chce[1 - nr] && czyjaKolej == 1-nr) {}
+
 
                 //sek_kryt
                 System.out.println("Sekcja krytyczna watku: Dekker-" + nr + " nr powt.= " + i);
@@ -57,7 +52,6 @@ public class Dekker extends Thread {
                 //
 
                 chce[nr] = false;
-                czyjaKolej = 1 - nr;
 
             } catch (InterruptedException e) {
                 System.out.println("PRZERWANIE");
