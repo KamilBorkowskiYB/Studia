@@ -77,4 +77,4 @@ lab3_1 - Huffman data compression
 
 lab3_2 - Huffman data decompression
 
-lab6 - Creating and addind CRC to file
+lab6 - Creating and adding CRC to file
